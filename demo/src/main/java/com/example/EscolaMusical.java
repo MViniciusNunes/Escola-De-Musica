@@ -8,8 +8,8 @@ public class EscolaMusical {
 
         banda[0] = new Violao("Violão Clássico", "Madeira", 6);
         banda[1] = new Piano("Piano de Cauda", "Madeira e Metal", 88);
-        banda[2] = new Bateria("Bateria Acústica", "Madeira e Metal", 5);
-        banda[3] = new Saxofone("Saxofone", "Latão", "Alto");
+        banda[2] = new bateria("Bateria Acústica", "Madeira e Metal", 5);
+        banda[3] = new saxofone("Saxofone", "Latão", "Alto");
 
         EscolaMusical escola = new EscolaMusical();
         escola.apresentar(banda);
@@ -22,11 +22,13 @@ public class EscolaMusical {
         // Afinar todos
         for (InstrumentoMusical inst : banda) {
             inst.afinar();
+            System.out.println();
         }
 
         System.out.println("\n--- Instrumentos começaram a tocar ---");
         for (InstrumentoMusical inst : banda) {
             inst.tocar();
+            System.out.println();
         }
 
         System.out.println("\n----- Mostrando informações dos Instrumentos -----");
@@ -34,8 +36,5 @@ public class EscolaMusical {
             System.out.println("\nInstrumento musical " + (i + 1) + " :");
             banda[i].mostrarInformaçoes();
         }
-
-        System.out.println("=================================================");
-        System.out.println("BUILD SUCCESS");
     }
 }
