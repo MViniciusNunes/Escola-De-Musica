@@ -17,7 +17,7 @@ public class Violao extends InstrumentoMusical {
     @Override
     public void afinar(){
         super.afinar();
-        System.out.println("ajustando a tensão das" + numeroCordas+ "cordas");
+        System.out.println("ajustando a tensão das" + numeroCordas+ " cordas");
     } 
 
     @Override
