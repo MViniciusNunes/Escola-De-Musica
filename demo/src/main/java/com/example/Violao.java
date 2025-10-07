@@ -3,9 +3,9 @@ package com.example;
 public class Violao extends InstrumentoMusical {
     private int numeroCordas;
 
-    public Violao (String nome, String meterial, int numeroCordas){
-        super(nome, material);
-        this.numeroCordas =numeroCordas;
+    public Violao (String nome, String material, int numeroCordas){
+        super (nome, material);
+        this.numeroCordas = numeroCordas;
     }
 
     @Override
